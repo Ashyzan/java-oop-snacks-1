@@ -5,7 +5,9 @@ import java.util.Arrays;
 
 public class RegistroStudenti {
 	
-	private String [] arrayStudente;
+	private Studente [] arrayStudente;
+	
+	private int posizioneArray = 0;
 	
 	
 	
@@ -14,29 +16,19 @@ public class RegistroStudenti {
 	
 	public RegistroStudenti() {
 		
-		this.arrayStudente = arrayStudente;
+		this.arrayStudente = new Studente[3];
 	}
 	
-	
-	// getter e setter
-	
-	
-	public String[] getArrayStudente() {
-		return arrayStudente;
-	}
-
-
-	public void setArrayStudente(String[] arrayStudente) {
-		this.arrayStudente = arrayStudente;
-	}
 	
 	
 	// metodo pubblico per aggiungere studenti al registro.
 
-	public void aggiungiStudente(String [] studenti) {
-		
-		
-		setArrayStudente(studenti);
+	public void aggiungiStudente(Studente input) {
+		 
+	  
+	        Arrays.fill(arrayStudente, input); 
+	        System.out.println("ho inserito un nuovo studente nell'array");
+	
 		
 				
 	}
@@ -45,7 +37,11 @@ public class RegistroStudenti {
 	
 	public void stampaListaStudenti() {
 		
-		System.out.println(getArrayStudente()); 
+		System.out.println("Ecco la tua lista: "
+                //+ Arrays.deepToString(this.arrayStudente)); 
+			+ Arrays.toString(this.arrayStudente)); 
+		
+	
 		 
 	}
 	
