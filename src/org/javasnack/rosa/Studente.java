@@ -15,9 +15,9 @@ public class Studente {
 		
 	}
 	
-	public String stampaStudente() {
-		
-		return "Ecco lo studente: nome " + nome + " cognome " + cognome + " età " + eta;
-	}
 	
+	@Override
+    public String toString() {
+		return "Studente: nome " + nome + " cognome " + cognome + " età " + eta;
+    }
 }

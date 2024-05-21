@@ -13,6 +13,7 @@ public class Main {
 		
 		registo1.stampaListaStudenti();
 		
+		
 	}
 
 }

@@ -25,9 +25,10 @@ public class RegistroStudenti {
 
 	public void aggiungiStudente(Studente input) {
 		 
-	  
+		
 	        Arrays.fill(arrayStudente, input); 
 	        System.out.println("ho inserito un nuovo studente nell'array");
+	        
 	
 		
 				
@@ -37,15 +38,13 @@ public class RegistroStudenti {
 	
 	public void stampaListaStudenti() {
 		
-		System.out.println("Ecco la tua lista: "
-                //+ Arrays.deepToString(this.arrayStudente)); 
-			+ Arrays.toString(this.arrayStudente)); 
+		System.out.println("Ecco la tua lista: ");
+		
+		System.out.println(Arrays.toString(this.arrayStudente));
 		
 	
 		 
 	}
-	
-
 	  
  
 }
